@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="icon" href="images/man-worker.png" type="image/png" />
+    <meta name="theme-color" content="#60a5fa" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>خدمات التلاجات</title>
+    <meta
+      name="description"
+      content="نحن في مركز الصيانة الرائد نفخر بتقديم خدمات صيانة التلاجات بمستوى لا مثيل له. فريقنا المحترف والمدرب بإتقان يعمل على إصلاح التلاجات بأعلى جودة ممكنة، سواء كانت في مقرنا أو في مكانك، مع ضمان استخدام قطع الغيار الأصلية وأسعار تنافسية لا مثيل لها. نحن نفهم أهمية راحتك، ولذلك نلتزم بإصلاح التلاجات في نفس اليوم لضمان عودتها للعمل بأفضل أداء ممكن، لتستمتع بأجواء منعشة وأطعمة محفوظة بأمان."
+    />
+  </head>
+  <body>
+    <header class="flex items-center justify-between fixed w-full z-10">
+      <a href="index.html"
+        ><img src="images/img.png" alt="Logo" loading="eager"
+      /></a>
+      <nav
+        id="nav-menu"
+        class="max-md:absolute max-md:top-0 max-md:right-0 max-md:w-full max-md:p-2.5 max-md:bg-[#f1f5f9] max-md:mt-[100px] max-md:translate-y-[-100%] max-md:ease-in-out"
+      >
+        <ul class="flex items-center max-md:block">
+          <li>
+            <a class="max-md:text-2xl max-md:py-2.5" href="index.html"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a class="max-md:text-2xl max-md:py-2.5" href="maintenance.html"
+              >التكييف</a
+            >
+          </li>
+          <li>
+            <a
+              class="max-md:text-2xl max-md:py-2.5"
+              href="refrigerator-services.html"
+              >التلاجات</a
+            >
+          </li>
+          <li>
+            <a
+              class="max-md:text-2xl max-md:py-2.5"
+              href="washer-maintenance.html"
+              >الغسالات</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a
+        class="contact bg-[#60a5fa]"
+        href="https://www.facebook.com/profile.php?id=61551844457786"
+        >اتصل بنا</a
+      >
+      <i
+        id="hamburger-icon"
+        class="fa-solid fa-bars text-4xl text-white p-2.5 md-[769px]:hidden"
+      ></i>
+    </header>
+    <main>
+      <section class="home relative">
+        <div class="text max-md:w-full max-md:px-3" data-aos="fade-up">
+          <h1>العالمية للصيانة</h1>
+          <h2 class="typewriter-text text-2xl" id="typewriter"></h2>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var text =
+                "نحن في مركز الصيانة الرائد نفخر بتقديم خدمات صيانة التلاجات بمستوى لا مثيل له. فريقنا المحترف والمدرب بإتقان يعمل على إصلاح التلاجات بأعلى جودة ممكنة، سواء كانت في مقرنا أو في مكانك، مع ضمان استخدام قطع الغيار الأصلية وأسعار تنافسية لا مثيل لها. نحن نفهم أهمية راحتك، ولذلك نلتزم بإصلاح التلاجات في نفس اليوم لضمان عودتها للعمل بأفضل أداء ممكن، لتستمتع بأجواء منعشة وأطعمة محفوظة بأمان.";
+              var index = 0;
+              var speed = 50; // سرعة الكتابة (بالميلي ثانية)
+              function typeWriter() {
+                if (index < text.length) {
+                  document.getElementById("typewriter").innerHTML +=
+                    text.charAt(index);
+                  index++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+              typeWriter();
+            });
+          </script>
+        </div>
+      </section>
+      <section
+        class="highlights container"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <h2 class="text-center text-3xl font-bold my-10">
+          لماذا تختار مركزنا لصيانة التلاجات؟
+        </h2>
+        <div
+          class="features-container grid grid-cols-2 gap-8 justify-items-center gap-5 max-md:grid-cols-1"
+        >
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-tools text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">فريق ذو خبرة عالية</h2>
+            <h3 class="text-xl">
+              لدينا فريق من المهندسين والفنيين ذوي الخبرة العالية في صيانة
+              التلاجات. نحرص على تقديم خدمات متميزة لضمان رضا عملائنا. نعتمد على
+              التدريب المستمر لتحديث مهارات فريقنا. نحن ملتزمون بتقديم حلول
+              فعالة ومستدامة. يمكنك الاعتماد علينا لحل جميع مشاكل التلاجات.
+            </h3>
+          </div>
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i
+              class="fa-solid fa-thermometer-three-quarters text-5xl text-[#60a5fa]"
+            ></i>
+            <h2 class="text-3xl my-3.5">أحدث المعدات التقنية</h2>
+            <h3 class="text-xl">
+              نستخدم أحدث المعدات التقنية في عمليات الصيانة لضمان نتائج دقيقة
+              وسريعة. تقنية متقدمة تساعد في تشخيص الأعطال بدقة عالية. نحرص على
+              تقليل وقت التوقف وزيادة كفاءة التشغيل. نتبع أفضل الممارسات في
+              استخدام الأدوات التكنولوجية. نعتمد على المعدات الموثوقة لضمان جودة
+              الخدمة.
+            </h3>
+          </div>
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-money-bill-wave text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">تكلفة مناسبة</h2>
+            <h3 class="text-xl">
+              نقدم خدمات صيانة التلاجات بأسعار تنافسية تناسب جميع الميزانيات.
+              نضمن لك أفضل قيمة مقابل ما تدفعه من مال. استمتع بعروض خاصة وخصومات
+              مميزة لعملائنا. نحن نؤمن بأن الجودة لا تعني بالضرورة ارتفاع
+              الأسعار. رضا العملاء هو هدفنا الأول والأخير.
+            </h3>
+          </div>
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-clock text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">خدمة سريعة وفعالة</h2>
+            <h3 class="text-xl">
+              نحن نفهم أهمية الوقت لعملائنا، لذا نضمن تقديم خدمات سريعة وفعالة.
+              فريقنا مستعد للتعامل مع أي مشكلة في أي وقت. نعمل على مدار الساعة
+              لضمان راحتك ورضاك. استجابتنا السريعة تضمن لك حل المشكلات في أسرع
+              وقت. نحن ملتزمون بتقديم خدمة تتجاوز توقعاتك.
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-black text-white mt-5 pt-6 max-md:px-2.5"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+    >
+      <div
+        class="grid grid-cols-2 gap-8 justify-items-center max-md:grid-cols-1"
+      >
+        <div class="contact max-md:w-full">
+          <h2 class="text-3xl">مركز الصيانة</h2>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>القاهرة - **** - ****</span>
+          </p>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-000000000</span>
+          </p>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-000000000</span>
+          </p>
+          <div class="social-media flex gap-2.5 text-5xl">
+            <a href="https://api.whatsapp.com/send?phone=01-000000000">
+              <i class="fa-brands fa-whatsapp text-[#22c55e]"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61551844457786">
+              <i class="fa-brands fa-facebook text-[#3b82f6]"></i>
+            </a>
+          </div>
+        </div>
+        <img
+          class="w-48"
+          src="images/man-worker.png"
+          alt="Logo"
+          loading="lazy"
+        />
+      </div>
+      <div class="copy w-fit max-md:py-4">
+        <h2 class="flex text-2xl max-md:text-sm">
+          &copy; 2024 جميع الحقوق محفوظة تصميم.
+          <a
+            class="text-[#60a5fa] text-3xl max-md:text-base"
+            href="https://www.facebook.com/profile.php?id=61551844457786"
+            target="_blank"
+            >موقع خدمة
+          </a>
+        </h2>
+      </div>
+    </footer>
+    <i
+      id="scrollToTop"
+      class="fa-solid fa-circle-up animate-bounce bg-[#f1f5f9] rounded-full"
+    ></i>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

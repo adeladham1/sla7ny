@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="icon" href="images/man-worker.png" type="image/png" />
+    <meta name="theme-color" content="#60a5fa" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>مركز الصيانة</title>
+    <meta
+      name="description"
+      content="في مركزنا، نؤمن بجودة الخدمة وراحة العميل. لذا، فإن صيانة الأجهزة تتم على أيدي متخصصين محترفين، سواءً في مركزنا أو في منزلك. نضمن لك الصيانة بأسعار تنافسية، واستخدام قطع غيار أصلية، مع الالتزام بفترة الضمان لضمان رضاك التام. ولا داعي للانتظار، فالصيانة تتم بنفس اليوم لضمان عودة جهازك للعمل بكفاءة فائقة."
+    />
+  </head>
+  <body>
+    <header class="flex items-center justify-between fixed w-full z-10">
+      <a href="index.html"
+        ><img src="images/img.png" alt="Logo" loading="eager"
+      /></a>
+      <nav
+        id="nav-menu"
+        class="max-md:absolute max-md:top-0 max-md:right-0 max-md:w-full max-md:p-2.5 max-md:bg-[#f1f5f9] max-md:mt-[100px] max-md:translate-y-[-100%] max-md:ease-in-out"
+      >
+        <ul class="flex items-center max-md:block">
+          <li>
+            <a class="max-md:text-2xl max-md:py-2.5" href="index.html"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a class="max-md:text-2xl max-md:py-2.5" href="maintenance.html"
+              >التكييف</a
+            >
+          </li>
+          <li>
+            <a
+              class="max-md:text-2xl max-md:py-2.5"
+              href="refrigerator-services.html"
+              >التلاجات</a
+            >
+          </li>
+          <li>
+            <a
+              class="max-md:text-2xl max-md:py-2.5"
+              href="washer-maintenance.html"
+              >الغسالات</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a
+        class="contact bg-[#60a5fa]"
+        href="https://www.facebook.com/profile.php?id=61551844457786"
+        >اتصل بنا</a
+      >
+      <i
+        id="hamburger-icon"
+        class="fa-solid fa-bars text-4xl text-white p-2.5 md-[769px]:hidden"
+      ></i>
+    </header>
+    <main>
+      <section class="home relative">
+        <div class="text max-md:w-full max-md:px-3" data-aos="fade-up">
+          <h1>العالمية للصيانة</h1>
+          <h2 class="typewriter-text text-2xl" id="typewriter"></h2>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var text =
+                "في مركزنا، نؤمن بجودة الخدمة وراحة العميل. لذا، فإن صيانة الأجهزة تتم على أيدي متخصصين محترفين، سواءً في مركزنا أو في منزلك. نضمن لك الصيانة بأسعار تنافسية، واستخدام قطع غيار أصلية، مع الالتزام بفترة الضمان لضمان رضاك التام. ولا داعي للانتظار، فالصيانة تتم بنفس اليوم لضمان عودة جهازك للعمل بكفاءة فائقة.";
+              var index = 0;
+              var speed = 50; // سرعة الكتابة (بالميلي ثانية)
+              function typeWriter() {
+                if (index < text.length) {
+                  document.getElementById("typewriter").innerHTML +=
+                    text.charAt(index);
+                  index++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+              typeWriter();
+            });
+          </script>
+        </div>
+      </section>
+      <section
+        class="highlights container"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <h2 class="text-center text-3xl font-bold my-10">
+          اهم اسباب لاختيارك مركزنا
+        </h2>
+        <div
+          class="features-container grid grid-cols-3 gap-8 justify-items-center gap-5"
+        >
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-award text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">خبرة واسعة في صيانة الأجهزة</h2>
+            <h3 class="text-xl">
+              مع سنوات من الخبرة في صيانة جميع أنواع الأجهزة الكهربائية، نضمن لك
+              خدمة ممتازة وموثوقة. فرقنا المؤهلة تعمل بكفاءة على إصلاح الأعطال
+              وضمان عودة أجهزتك للعمل بشكل مثالي. نلتزم بأعلى معايير الجودة في
+              جميع عمليات الصيانة.
+            </h3>
+          </div>
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-cogs text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">استخدام أحدث التقنيات</h2>
+            <h3 class="text-xl">
+              نستخدم أحدث التقنيات والمعدات في صيانة الأجهزة لضمان تقديم خدمات
+              سريعة ودقيقة. نعتمد على التكنولوجيا المتقدمة لتشخيص الأعطال بدقة
+              وتوفير الحلول الفعالة. تكنولوجيا متطورة تزيد من كفاءة عملية
+              الصيانة وتقلل من وقت التوقف.
+            </h3>
+          </div>
+          <div class="feature text-center p-5 max-md:p-2.5">
+            <i class="fa-solid fa-hand-holding-usd text-5xl text-[#60a5fa]"></i>
+            <h2 class="text-3xl my-3.5">أسعار تنافسية</h2>
+            <h3 class="text-xl">
+              نقدم خدمات صيانة عالية الجودة بأسعار تنافسية تتناسب مع ميزانيتك.
+              نحرص على تقديم قيمة ممتازة مقابل السعر لضمان رضا عملائنا. استمتع
+              بخدمات متميزة بتكلفة معقولة تحافظ على أجهزتك في أفضل حالاتها.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section
+        class="brands container"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <h2 class="text-center text-4xl font-bold my-10">خدماتنا</h2>
+        <div class="grid grid-cols-3 gap-8 justify-items-center">
+          <div class="brand">
+            <img
+              src="images/1280px-unionaire_logo.png"
+              alt="يونيور اير"
+              loading="lazy"
+            />
+          </div>
+          <div class="brand">
+            <img src="images/87b8294e.png" alt="سامسونج" loading="lazy" />
+          </div>
+          <div class="brand">
+            <img src="images/beko.png" alt="بيكو" loading="lazy" />
+          </div>
+          <div class="brand">
+            <img src="images/elaraby-01.png" alt="العربي" loading="lazy" />
+          </div>
+          <div class="brand">
+            <img src="images/hhhhhhhh.png" alt="وايت ويل" loading="lazy" />
+          </div>
+          <div class="brand">
+            <img
+              src="images/kiriazi-logo-arabic-6.png"
+              alt="كريازي"
+              loading="lazy"
+            />
+          </div>
+          <div class="brand">
+            <img src="images/LG_logo.png" alt="ال جي" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-black text-white mt-5 pt-6 max-md:px-2.5"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+    >
+      <div
+        class="grid grid-cols-2 gap-8 justify-items-center max-md:grid-cols-1"
+      >
+        <div class="contact max-md:w-full">
+          <h2 class="text-3xl">مركز الصيانة</h2>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>القاهرة - **** - ****</span>
+          </p>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-000000000</span>
+          </p>
+          <p class="text-xl my-1.5">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-000000000</span>
+          </p>
+          <div class="social-media flex gap-2.5 text-5xl">
+            <a href="https://api.whatsapp.com/send?phone=01-000000000">
+              <i class="fa-brands fa-whatsapp text-[#22c55e]"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61551844457786">
+              <i class="fa-brands fa-facebook text-[#3b82f6]"></i>
+            </a>
+          </div>
+        </div>
+        <img
+          class="w-48"
+          src="images/man-worker.png"
+          alt="Logo"
+          loading="lazy"
+        />
+      </div>
+      <div class="copy w-fit max-md:py-4">
+        <h2 class="flex text-2xl max-md:text-sm">
+          &copy; 2024 جميع الحقوق محفوظة تصميم.
+          <a
+            class="text-[#60a5fa] text-3xl max-md:text-base"
+            href="https://www.facebook.com/profile.php?id=61551844457786"
+            target="_blank"
+            >موقع خدمة
+          </a>
+        </h2>
+      </div>
+    </footer>
+    <i
+      id="scrollToTop"
+      class="fa-solid fa-circle-up animate-bounce bg-[#f1f5f9] rounded-full"
+    ></i>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
